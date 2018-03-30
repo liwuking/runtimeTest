@@ -13,6 +13,10 @@
 		A94C27FB206E348600312D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94C27FA206E348600312D26 /* Assets.xcassets */; };
 		A94C27FE206E348600312D26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94C27FC206E348600312D26 /* LaunchScreen.storyboard */; };
 		A94C2801206E348600312D26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94C2800206E348600312D26 /* main.m */; };
+		A94C2809206E432500312D26 /* BBMessageForwardProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A94C2808206E432500312D26 /* BBMessageForwardProxy.m */; };
+		A94C280C206E49D400312D26 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = A94C280B206E49D400312D26 /* UIViewController+Tracking.m */; };
+		A94C280F206E4EAC00312D26 /* MyCar.m in Sources */ = {isa = PBXBuildFile; fileRef = A94C280E206E4EAC00312D26 /* MyCar.m */; };
+		A94C2812206E4EB500312D26 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = A94C2811206E4EB500312D26 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		A94C27FD206E348600312D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A94C27FF206E348600312D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94C2800206E348600312D26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A94C2807206E432500312D26 /* BBMessageForwardProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBMessageForwardProxy.h; sourceTree = "<group>"; };
+		A94C2808206E432500312D26 /* BBMessageForwardProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBMessageForwardProxy.m; sourceTree = "<group>"; };
+		A94C280A206E49D400312D26 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		A94C280B206E49D400312D26 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		A94C280D206E4EAC00312D26 /* MyCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCar.h; sourceTree = "<group>"; };
+		A94C280E206E4EAC00312D26 /* MyCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCar.m; sourceTree = "<group>"; };
+		A94C2810206E4EB500312D26 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		A94C2811206E4EB500312D26 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,14 @@
 			children = (
 				A94C27F1206E348600312D26 /* AppDelegate.h */,
 				A94C27F2206E348600312D26 /* AppDelegate.m */,
+				A94C2810206E4EB500312D26 /* Car.h */,
+				A94C2811206E4EB500312D26 /* Car.m */,
+				A94C280D206E4EAC00312D26 /* MyCar.h */,
+				A94C280E206E4EAC00312D26 /* MyCar.m */,
+				A94C280A206E49D400312D26 /* UIViewController+Tracking.h */,
+				A94C280B206E49D400312D26 /* UIViewController+Tracking.m */,
+				A94C2807206E432500312D26 /* BBMessageForwardProxy.h */,
+				A94C2808206E432500312D26 /* BBMessageForwardProxy.m */,
 				A94C27F4206E348600312D26 /* ViewController.h */,
 				A94C27F5206E348600312D26 /* ViewController.m */,
 				A94C27F7206E348600312D26 /* Main.storyboard */,
@@ -142,8 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94C280F206E4EAC00312D26 /* MyCar.m in Sources */,
+				A94C280C206E49D400312D26 /* UIViewController+Tracking.m in Sources */,
 				A94C27F6206E348600312D26 /* ViewController.m in Sources */,
 				A94C2801206E348600312D26 /* main.m in Sources */,
+				A94C2812206E4EB500312D26 /* Car.m in Sources */,
+				A94C2809206E432500312D26 /* BBMessageForwardProxy.m in Sources */,
 				A94C27F3206E348600312D26 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XXPBHKFPC;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = runtimeTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lbe.runtimeTest;
@@ -294,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XXPBHKFPC;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = runtimeTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lbe.runtimeTest;
